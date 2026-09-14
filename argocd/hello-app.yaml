@@ -7,7 +7,7 @@ spec:
   project: default
 
   source:
-    repoURL: https://github.com/YOUR_GITHUB_USERNAME/zudoc-gitops.git
+    repoURL: https://github.com/krishna-raj-sr/gitops-test.git
     targetRevision: main
     path: apps/hello
 
