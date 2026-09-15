@@ -52,6 +52,10 @@ spec:
             - secretRef:
                 name: hello-secret
 
+          volumeMounts:
+            - name: hello-storage
+              mountPath: /data
+
       volumes:
         - name: data
           persistentVolumeClaim:
