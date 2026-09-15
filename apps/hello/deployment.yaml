@@ -20,9 +20,18 @@ spec:
         - name: nginx
           image: nginx:alpine
 
+          resources:
+            requests:
+              cpu: "50m"
+              memory: "32Mi"
+
+            limits:
+              cpu: "200m"
+              memory: "128Mi"
+
           ports:
             - containerPort: 80
-            
+
           readinessProbe:
             httpGet:
               path: /
