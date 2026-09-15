@@ -51,3 +51,8 @@ spec:
                 name: hello-config
             - secretRef:
                 name: hello-secret
+
+      volumes:
+        - name: data
+          persistentVolumeClaim:
+            claimName: hello-data
