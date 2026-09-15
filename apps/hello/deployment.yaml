@@ -57,6 +57,6 @@ spec:
               mountPath: /data
 
       volumes:
-        - name: data
+        - name: hello-storage
           persistentVolumeClaim:
             claimName: hello-data
